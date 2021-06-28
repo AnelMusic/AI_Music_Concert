@@ -13,8 +13,6 @@ The training data was generated with the help of a smartphone. For the classific
 
 Note: The model was not finetuned. After fine tuning even better results should be expected.
 
-![](segmentation_overlay.gif)
-
 ## Prerequisite
 The code was tested on:
 
