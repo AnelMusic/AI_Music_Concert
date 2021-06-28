@@ -28,8 +28,6 @@ def main():
         print("TRAIN_SET train results: ", gig_model.evaluate(train_generator))
     elif config.MODE == "inference":
         gig_model.load_weights(config.CHECKPOINT_PATH)
-        print("VAL_SET train results: ", gig_model.evaluate(validation_generator))
-        print("TRAIN_SET train results: ", gig_model.evaluate(train_generator))
         
     player = music_player.MusicPlayer(config.SOUND_FILE_PIANO, config.SOUND_FILE_GUITAR, config.SOUND_FILE_VIOLIN)  
     for idx, demo_img in enumerate(demo_imgs):
@@ -40,11 +38,7 @@ def main():
         player.updateMusic(prediction)
 
     player.stopMusic()    
-    cv2.destroyAllWindows()
-
-      
-    
-    input("EINGABE:   ")
+    cv2.destroyAllWindows()    
     exit()
     
 

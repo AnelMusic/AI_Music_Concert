@@ -23,7 +23,7 @@ TEST_DIR = "/home/anelmusic/anel_projects/ai_gig/data/test_demo"
 BATCH_SIZE = 64
 EPOCHS = 10
 IMG_SIZE = (224, 224) # MobileNetV2 Epexts 224 squared inputs
-MODE = "train" # train/inference
+MODE = "inference" # train/inference
 
 "Define additional params"
 ##############################################################################       
